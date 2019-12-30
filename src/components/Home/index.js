@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import Routes from './routes';
-import './global.css';
 
-class App extends Component {
+class Home extends Component {
 
     render() {
         return(
             <div>
-                <Routes />
+                <h1>Tela Home</h1>
             </div>
         );
     }
 }
 
-export default App;
+export default Home;
