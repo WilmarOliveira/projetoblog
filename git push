@@ -1,0 +1,35 @@
+[33mcommit 43dcddff6c3fdae5cf92b3b6d85bf60825a654d2[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 21:46:54 2019 -0300
+
+    Construindo e estilizando página de login pt1
+
+[33mcommit be9fcce53d754b19f7d91b689fde2ecbe1bfc78a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 20:26:51 2019 -0300
+
+    Criando Header e Home
+
+[33mcommit 52c4bf0bdf90870043fedaf5b9bad231fe4fe668[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 18:03:14 2019 -0300
+
+    Introduzindo Firebase ao projeto
+
+[33mcommit 4608a184cd1ca69d225d53ee32fe05deea754660[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 17:23:34 2019 -0300
+
+    yarn add serialize javascript
+
+[33mcommit e92e5d212129143dcd229990d6d97466694926f6[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 16:58:03 2019 -0300
+
+    Criação de arquivos e rotas
+
+[33mcommit 46fad6be1b35ee7a5c50b8494e12e42ef9924914[m
+Author: Wilmar Oliveira <wilmar_oliveira13@hotmail.com>
+Date:   Mon Dec 30 12:07:46 2019 -0300
+
+    Projeto criado
