@@ -1,0 +1,36 @@
+form#content-register{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 418px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+}
+
+form#content-register h1{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form#content-register label{
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+
+form#content-register input{
+    height: 20px;
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+}
+
+form#content-register button{
+    cursor: pointer;
+    background: #272727;
+    color: #FBFEFF;
+    font-size: 18px;
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+    margin-top: 10px;
+}
