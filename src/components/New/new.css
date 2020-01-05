@@ -1,0 +1,59 @@
+div.botaoVoltar {
+    
+    margin: 20px auto;
+    padding: 30px;
+    
+}
+
+div.botaoVoltar a {
+    text-decoration: none;
+    background-color: #272727;
+    color: #FBFEFF;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
+form.formulario {
+    margin: 30px auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 418px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+}
+
+form.formulario h1 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+form.formulario label {
+    font-size: 18px;
+    margin-bottom: -10px;
+}
+
+form.formulario input {
+    line-height: 20px;
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+}
+
+form.formulario textarea {
+    border: 1px solid #1D1B1B;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+form.formulario button {
+    cursor: pointer;
+    background: #272727;
+    color: #FBFEFF;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
