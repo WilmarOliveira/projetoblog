@@ -17,6 +17,12 @@ class Register extends Component {
         this.onRegister = this.onRegister.bind(this);
     }
 
+    componentDidMount() {
+        if(firebase.getCurrent()) {
+            this.props.history.replace('/dashboard');
+        }
+    }
+
     register(e) {
         e.preventDefault();
         this.onRegister();

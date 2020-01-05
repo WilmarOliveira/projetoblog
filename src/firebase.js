@@ -46,6 +46,16 @@ class Firebase {
     getCurrent() {
         return app.auth().currentUser && app.auth().currentUser.email;
     }
+
+    async getUserName(callback) {
+        if(!app.auth().currentUser) {
+            return null;
+        }
+
+        const uid = app.auth().currentUser.uid;
+        await app.database().ref('usuarios').child(uid)
+        .once('value').then(callback);
+    }
 }
 
 export default new Firebase();
