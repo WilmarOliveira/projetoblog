@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import firebase from '../../firebase';
+import './dashboard.css';
 
 class Dashboard extends Component{
 
@@ -25,18 +26,23 @@ class Dashboard extends Component{
         })
     }
 
-    logout() {
-
+    logout = async () => {
+        await firebase.logout()
+        .catch((error) => {
+            console.log(error);
+        });
+        localStorage.removeItem('nome');
+        this.props.history.replace('/');
     }
 
     render() {
         return(
-            <div>
-                <div>
+            <div id="principal">
+                <div className="conteudo">
                     <h1>Bem-vindo {this.state.nome}</h1>
                     <Link to="/dashboard/new">Novo Post</Link>
                 </div>
-                <p>Logado com email: wilmar@hotmail.com</p>
+                <p>Logado com: {firebase.getCurrent()}</p>
                 <button onClick={this.logout} >Sair</button>
             </div>
         );

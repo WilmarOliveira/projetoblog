@@ -1,0 +1,35 @@
+div#principal {
+    width: 100%;
+    max-width: 618px;
+    margin: 20px auto;
+    padding: 30px;
+    border: 1px solid #1D1B1B;
+}
+
+div.conteudo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+div.conteudo a {
+    text-decoration: none;
+    background-color: #a12828;
+    color: #FBFEFF;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+div#principal p {
+    font-size: 10px;
+}
+
+div#principal button {
+    cursor: pointer;
+    background-color: #272727;
+    color: #FBFEFF;
+    border-radius: 5px;
+    padding: 5px;
+}
+
