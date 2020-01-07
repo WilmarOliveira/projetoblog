@@ -22,6 +22,7 @@ class Home extends Component {
                     descricao: childItem.val().descricao
                 });
             });
+            state.posts.reverse();
             this.setState(state);
         }));
     }

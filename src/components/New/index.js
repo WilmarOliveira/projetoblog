@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './new.css';
+import firebase from '../../firebase';
 
 class New extends Component {
 
@@ -9,13 +10,39 @@ class New extends Component {
         this.state = {
             titulo: '',
             imagem: '',
-            descricao: ''
+            descricao: '',
+            alert: ''
         };
 
         this.postar = this.postar.bind(this);
     }
 
-    postar() {
+    componentDidMount() {
+
+        if (!firebase.getCurrent()) {
+            this.props.history.replace('/login');
+        }
+    }
+
+    postar = async(e) => {
+        e.preventDefault();
+
+        let posts = firebase.app.ref('posts');
+        let chave = posts.push().key;
+
+        if(this.state.titulo !== '' && this.state.imagem !== '' && this.state.descricao !== '') {
+            await posts.child(chave).set({
+                titulo: this.state.titulo,
+                imagem: this.state.imagem,
+                descricao: this.state.descricao,
+                autor: localStorage.nome
+            })
+
+            this.props.history.replace('/dashboard')
+            alert('Nova postagem cadastrada com sucesso!');
+        } else {
+            this.setState({alert: 'Por favor, preencha todos os campos!'})
+        }
 
     }
 
@@ -26,6 +53,7 @@ class New extends Component {
                     <Link to="/dashboard" >Voltar</Link>
                 </div>
                 <form onSubmit={this.postar} className="formulario">
+                    <span>{this.state.alert}</span>
                     <h1>Nova Postagem</h1>
                     <label>Título:</label><br/>
                     <input type="text" autoFocus autoComplete="off" value={this.state.titulo}

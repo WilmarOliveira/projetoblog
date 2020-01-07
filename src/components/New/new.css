@@ -26,6 +26,13 @@ form.formulario {
     border-radius: 5px;
 }
 
+form.formulario span {
+    font-size: 10px;
+    color: #a12828;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 form.formulario h1 {
     text-align: center;
     padding: 10px;
